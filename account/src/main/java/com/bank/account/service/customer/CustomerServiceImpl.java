@@ -1,7 +1,7 @@
 package com.bank.account.service.customer;
 
 import com.bank.account.domain.model.Customer;
-import com.bank.account.dto.CustomerRequest;
+import com.bank.account.dto.customer.CustomerRequest;
 
 import com.bank.account.mapping.CustomerMapper;
 

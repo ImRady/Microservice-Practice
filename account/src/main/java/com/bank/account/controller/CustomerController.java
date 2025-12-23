@@ -3,9 +3,9 @@ package com.bank.account.controller;
 
 
 import com.bank.account.domain.model.Customer;
-import com.bank.account.dto.CustomerRequest;
+import com.bank.account.dto.customer.CustomerRequest;
 
-import com.bank.account.dto.CustomerResponse;
+import com.bank.account.dto.customer.CustomerResponse;
 import com.bank.account.mapping.CustomerMapper;
 import com.bank.account.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;

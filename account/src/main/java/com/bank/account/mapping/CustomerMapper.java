@@ -2,10 +2,9 @@ package com.bank.account.mapping;
 
 
 import com.bank.account.domain.model.Customer;
-import com.bank.account.dto.CustomerRequest;
-import com.bank.account.dto.CustomerResponse;
+import com.bank.account.dto.customer.CustomerRequest;
+import com.bank.account.dto.customer.CustomerResponse;
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
