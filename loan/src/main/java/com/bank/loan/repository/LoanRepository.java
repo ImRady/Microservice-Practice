@@ -1,4 +1,11 @@
 package com.bank.loan.repository;
 
-public interface LoanRepository {
+
+import com.bank.loan.domain.entity.Loan;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface LoanRepository extends MongoRepository<Loan,Long> {
+
 }
