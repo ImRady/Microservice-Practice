@@ -6,6 +6,8 @@ import com.bank.loan.dto.customer.ResponseLoan;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import java.util.List;
+
 
 @Mapper(componentModel = "spring")
 public interface LoanMapper {
@@ -14,5 +16,7 @@ public interface LoanMapper {
     Loan toLoan(RequestLoan requestLoan);
 
     ResponseLoan toResponseLoan(Loan loan);
+
+    List<ResponseLoan> toResponseLoans(List<Loan> loans);
 
 }

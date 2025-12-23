@@ -8,8 +8,8 @@ import java.time.LocalDate;
 @Data
 public class ResponseLoan {
 
-    private Long loanNumber;
-    private Long customerId;
+    private String loanNumber;
+    private String customerId;
     private LocalDate startDate;
     private String loanType;
     private BigDecimal totalLoan;
