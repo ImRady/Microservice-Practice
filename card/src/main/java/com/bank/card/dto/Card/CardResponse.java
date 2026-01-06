@@ -1,26 +1,26 @@
-package com.bank.card.domain.entity;
+package com.bank.card.dto.Card;
 
-import jakarta.persistence.*;
+
+
 import lombok.Data;
-
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
-@Entity
-@Table(name = "cards")
 @Data
-public class Card {
+public class CardResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cardId;
+    private String cardId;
+
     private String customerId;
-    private String cardNumber;
+
     private String cardType;
+
     private BigDecimal totalLimit;
+
     private BigDecimal amountUsed;
+
     private BigDecimal availableAmount;
+
     private LocalDate createdDate;
 }

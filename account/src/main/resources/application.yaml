@@ -1,11 +1,17 @@
 spring:
   application:
     name: account
+  profiles:
+    active: prod
+  config:
+    import: optional:configserver:http://localhost:8071
 
   data:
     mongodb:
       host: localhost
       port: 27017
       database: account_db
+
+
 
 

@@ -1,0 +1,14 @@
+account:
+  msg: Welcome to Bank Account Dev application
+  build-version: 3.0.0
+
+  mailDetails:
+    hostName: dev-accounts@bank.com
+    port: 9000
+    from: dev-accounts@bank.com
+    subject: Your Account Details from Bank dev Environment
+
+  activeBranches:
+    - Takeo
+    - Battambang
+    - Kampong Cham

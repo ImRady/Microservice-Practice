@@ -9,7 +9,6 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface AccountMapper {
 
-
     Account toAccount(AccountRequest accountRequest);
     AccountResponse toResponse(Account account);
 
