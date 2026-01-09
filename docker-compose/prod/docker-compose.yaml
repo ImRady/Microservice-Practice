@@ -1,0 +1,38 @@
+  version: "3.8"
+
+  services:
+    configserver:
+      image: bank/configserver:latest
+      ports:
+        - "8071:8071"
+      networks:
+        - banknet
+      deploy:
+        resources:
+          limits:
+            memory: 700M
+
+    account:
+      image: bank/accountservice:latest
+      ports:
+        - "8080:8080"
+      networks:
+        - banknet
+      depends_on:
+        - configserver
+      deploy:
+        restart_policy:
+          condition: on-failure
+          delay: 5s
+          max_attempts: 3
+          window: 120s
+        resources:
+          limits:
+            memory: 700M
+      environment:
+        SPRING_PROFILES_ACTIVE: dev
+        SPRING_CONFIG_URI: http://configserver:8071
+
+  networks:
+    banknet:
+      driver: bridge
