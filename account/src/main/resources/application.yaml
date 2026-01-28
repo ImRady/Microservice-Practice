@@ -1,17 +1,74 @@
+#  spring:
+#    application:
+#      name: account
+#
+#    config:
+#      import: optional:configserver:http://configserver:8071
+#
+#    data:
+#      mongodb:
+#        host: mongo
+#        port: 27017
+#        database: account_db
+#
+#  server:
+#    port: 8080
+#
+#  management:
+#    endpoints:
+#      web:
+#        exposure:
+#          include: "*"
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://localhost:9000/eureka/
 spring:
   application:
     name: account
-  profiles:
-    active: prod
+
   config:
     import: optional:configserver:http://localhost:8071
 
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: account_db
+      uri: mongodb://localhost:27017/account_db
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  shutdown:
+    enabled: true
+
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
 
 
+info:
+  app:
+    name: Account Microservice
+    description: This microservice handles account management operations.
+    version: 1.0.0
+    env:
+      enabled: true
 
 

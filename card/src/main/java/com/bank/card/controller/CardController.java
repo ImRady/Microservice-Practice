@@ -44,5 +44,14 @@ public class CardController {
         return ResponseEntity.ok(cardResponse);
     }
 
+    @GetMapping("{customerId}/customer")
+    public ResponseEntity<?>getAllCardsByCustomerId(@PathVariable String customerId){
+
+        List<Card> cardsByCustomerId = cardService.getCardsByCustomerId(customerId);
+        List<CardResponse> cardResponses = cardMapper.toCardResponse(cardsByCustomerId);
+        return ResponseEntity.ok(cardResponses);
+
+    }
+
 
 }

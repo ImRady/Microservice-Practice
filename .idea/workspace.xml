@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e37c843-1cdf-47c9-b0f9-8d907246f8f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/dto/card/CardResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/dto/customer/CustomerReponseDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/dto/exception/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/dto/loan/LoanResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/exception/GlobalResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/client/CardFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/client/LoanFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/service/feignClient/feignClient/CustomerFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loan/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/service/customer/CustomerFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Bank.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/AccountApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/AccountApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/service/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/card/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/java/com/bank/card/CardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/CardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/java/com/bank/card/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/controller/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/java/com/bank/card/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/java/com/bank/card/service/cardService/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/service/cardService/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/java/com/bank/card/service/cardService/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/java/com/bank/card/service/cardService/CardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/card/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/java/com/bank/configserver/ConfigserverApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/account-dev.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/account-prod.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/account.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/test/java/com/bank/configserver/ConfigserverApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/dev/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/dev/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loan/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/LoanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/LoanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/service/loan/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/service/loan/LoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/service/loan/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/java/com/bank/loan/service/loan/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loan/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_E:/Practice/Microservice/Bank" value="36oX5shcHPWcx9FnVebcl9ZIcpv" />
+      <entry key="_E:/Practice/Microservice/Bank/eurekaserver" value="38h5uE5RfaSNEYFzYSNbXIK8Uu5" />
+      <entry key="_E:/Practice/Microservice/configserver" value="38pzBmd7pE6YQTdHf5fAFNCEatV" />
+      <entry key="_E:/Practice/Spring-boot/configserver" value="38pUKapJ9M8NFtZeJQcCnotqm1d" />
+      <entry key="_E:/Practice/configserver" value="38f56573tmUDLSb6jNNfo9SJWZQ" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ImRady&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ImRady/Microservice-Practice.git&quot;,
+    &quot;accountId&quot;: &quot;65435b3b-ac5c-4a31-8544-8fa0e2a6eda4&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/configserver/src/main/java/com/bank/configserver/ConfigserverApplication.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="36oX5shcHPWcx9FnVebcl9ZIcpv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountApplication.executor": "Run",
+    "Application.CardApplication.executor": "Run",
+    "Application.ConfigserverApplication.executor": "Run",
+    "Application.EurekaserverApplication.executor": "Run",
+    "Application.LoanApplication.executor": "Run",
+    "Maven.configserver [clean,package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "card",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Practice/Microservice/Bank",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bank.account.service.account" />
+      <recent name="com.bank.account.service.customer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Practice\Microservice\Bank\configserver\src\main\java\com\bank\configserver" />
+      <recent name="E:\Practice\Microservice\Bank\card" />
+      <recent name="E:\Practice\Microservice\Bank\eurekaserver" />
+      <recent name="E:\Practice\Microservice\Bank\eurekaserver\src\main\resources" />
+      <recent name="E:\Practice\Microservice\Bank\docker-compose\prod" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LoanApplication">
+    <configuration name="AccountApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.account.AccountApplication" />
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.card.CardApplication" />
+      <module name="card" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.card.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.loan.LoanApplication" />
+      <module name="loan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.loan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.configserver.ConfigserverApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.eurekaserver.EurekaserverApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoanApplication" />
+        <item itemvalue="Application.CardApplication" />
+        <item itemvalue="Application.AccountApplication" />
+        <item itemvalue="Spring Boot.EurekaserverApplication" />
+        <item itemvalue="Spring Boot.ConfigserverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e37c843-1cdf-47c9-b0f9-8d907246f8f4" name="Changes" comment="" />
+      <created>1765673718224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765673718224</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/loan/src/main/java/com/bank/loan/LoanApplication.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eurekaserver/src/main/java/com/bank/eurekaserver/EurekaserverApplication.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

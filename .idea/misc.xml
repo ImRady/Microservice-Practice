@@ -8,7 +8,18 @@
         <option value="$PROJECT_DIR$/loan/pom.xml" />
         <option value="$PROJECT_DIR$/card/pom.xml" />
         <option value="$PROJECT_DIR$/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../../configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../../New/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../configserver/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">

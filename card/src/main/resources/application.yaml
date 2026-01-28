@@ -2,10 +2,14 @@ spring:
   application:
     name: card
 
+  config:
+    import: optional:configserver:http://localhost:8071
+
   datasource:
     url: jdbc:postgresql://localhost:5432/card_db
     username: postgres
     password: 1234
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -15,3 +19,34 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8070
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+    shutdown:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+info:
+  app:
+    name: Card Microservice
+    description: This microservice manages card information and operations.
+    version: 1.0.0
+    env:
+      enabled: true

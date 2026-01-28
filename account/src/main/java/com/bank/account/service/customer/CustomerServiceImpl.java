@@ -39,4 +39,9 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.findById(customerId).
                 orElseThrow(()-> new RuntimeException("Customer not found with id: {}"+ customerId));
     }
+
+    @Override
+    public Boolean existsById(String id) {
+        return customerRepository.existsById(id);
+    }
 }

@@ -10,4 +10,5 @@ public interface CustomerService {
     Customer save(CustomerRequest customer);
     List<Customer>getCustomers();
     Customer getByCustomerId(String customerId);
+    Boolean existsById(String id);
 }

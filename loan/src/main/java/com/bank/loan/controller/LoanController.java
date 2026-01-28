@@ -35,14 +35,21 @@ public class LoanController {
 
     @GetMapping
     public ResponseEntity<?> getLoans() {
-
         return ResponseEntity.ok(loanMapper.toResponseLoans(loanService.getLoans()));
 
     }
 
-    @GetMapping("/{customerId}")
+    @GetMapping("/{loanId}")
+    public ResponseEntity<?> getLoanById(@PathVariable String loanId) {
+        return ResponseEntity.ok(
+                loanMapper.toResponseLoan(loanService.getLoanById(loanId)));
+    }
+    @GetMapping("{customerId}/customer")
     public ResponseEntity<?> getLoansByCustomerId(@PathVariable String customerId) {
         return ResponseEntity.ok(
-                loanMapper.toResponseLoan(loanService.getLoanById(customerId)));
+                loanMapper.toResponseLoans(loanService.getLoansByCustomerId(customerId)));
     }
+
+
+
 }

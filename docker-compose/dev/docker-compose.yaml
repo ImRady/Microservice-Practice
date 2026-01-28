@@ -1,6 +1,13 @@
   version: "3.8"
 
   services:
+    mongo:
+      image: mongo:7
+      container_name: mongo
+      ports:
+        - "27017:27017"
+      networks:
+        - banknet
     configserver:
       image: bank/configserver:latest
       ports:
@@ -36,3 +43,4 @@
   networks:
     banknet:
       driver: bridge
+ 
