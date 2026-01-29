@@ -13,6 +13,7 @@ import com.bank.account.mapping.CustomerMapper;
 import com.bank.account.service.client.CardFeignClient;
 import com.bank.account.service.client.LoanFeignClient;
 import com.bank.account.service.customer.CustomerService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.http.ResponseEntity;
@@ -64,6 +65,7 @@ public class CustomerController {
     }
 
     @GetMapping("/customerDetail/{customerId}")
+    @CircuitBreaker(name = "detailsForCustomerSupportApp")
     public ResponseEntity<CustomerReponseDetail>getCustomerDetail(@PathVariable String customerId){
 
         CustomerReponseDetail customerReponseDetail = new CustomerReponseDetail();

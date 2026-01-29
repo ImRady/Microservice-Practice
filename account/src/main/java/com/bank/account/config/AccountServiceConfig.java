@@ -18,3 +18,4 @@ public class AccountServiceConfig {
     private Map<String, String> mailDetails;
     private List<String> activeBranches;
 }
+ 
